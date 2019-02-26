@@ -1,0 +1,90 @@
+Microsoft Windows [Version 10.0.17134.590]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\caleb.tsenytham>cd C:\Users\caleb.tsenytham\Documents\GitHub\Tensor-Flow-Test
+
+C:\Users\caleb.tsenytham\Documents\GitHub\Tensor-Flow-Test>python CalebVersion.py
+Traceback (most recent call last):
+  File "CalebVersion.py", line 13, in <module>
+    extract=True)
+TypeError: get_file() missing 1 required positional argument: 'origin'
+
+C:\Users\caleb.tsenytham\Documents\GitHub\Tensor-Flow-Test>python CalebVersion.py
+Traceback (most recent call last):
+  File "CalebVersion.py", line 13, in <module>
+    extract=True)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\utils\data_utils.py", line 265, in get_file
+    _extract_archive(fpath, datadir, archive_format)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\utils\data_utils.py", line 132, in _extract_archive
+    if is_match_fn(file_path):
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\tarfile.py", line 2442, in is_tarfile
+    t = open(name)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\tarfile.py", line 1573, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\tarfile.py", line 1638, in gzopen
+    fileobj = gzip.GzipFile(name, mode + "b", compresslevel, fileobj)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\gzip.py", line 163, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\caleb.tsenytham\\.keras\\datasets\\flower_photos'
+
+C:\Users\caleb.tsenytham\Documents\GitHub\Tensor-Flow-Test>python CalebVersion.py
+Traceback (most recent call last):
+  File "CalebVersion.py", line 13, in <module>
+    extract=True)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\utils\data_utils.py", line 265, in get_file
+    _extract_archive(fpath, datadir, archive_format)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\utils\data_utils.py", line 132, in _extract_archive
+    if is_match_fn(file_path):
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\tarfile.py", line 2442, in is_tarfile
+    t = open(name)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\tarfile.py", line 1573, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\tarfile.py", line 1638, in gzopen
+    fileobj = gzip.GzipFile(name, mode + "b", compresslevel, fileobj)
+  File "C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\gzip.py", line 163, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\caleb.tsenytham\\.keras\\datasets\\flower_photos'
+
+C:\Users\caleb.tsenytham\Documents\GitHub\Tensor-Flow-Test>python CalebVersion.py
+Found 3670 images belonging to 5 classes.
+Image batch shape:  (32, 256, 256, 3)
+Labe batch shape:  (32, 5)
+WARNING:tensorflow:From C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\ops\control_flow_ops.py:3632: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+lambda (Lambda)              (None, 1001)              0
+=================================================================
+Total params: 0
+Trainable params: 0
+Non-trainable params: 0
+_________________________________________________________________
+Found 3670 images belonging to 5 classes.
+Image batch shape:  (32, 224, 224, 3)
+Labe batch shape:  (32, 5)
+2019-02-26 14:59:16.238854: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2019-02-26 14:59:20.807314: W tensorflow/core/framework/allocator.cc:124] Allocation of 154140672 exceeds 10% of system memory.
+Found 3670 images belonging to 5 classes.
+Image batch shape:  (32, 224, 224, 3)
+Labe batch shape:  (32, 5)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+lambda_1 (Lambda)            (None, 1280)              0
+_________________________________________________________________
+dense (Dense)                (None, 5)                 6405
+=================================================================
+Total params: 6,405
+Trainable params: 6,405
+Non-trainable params: 0
+_________________________________________________________________
+2019-02-26 14:59:48.584852: W tensorflow/core/framework/allocator.cc:124] Allocation of 154140672 exceeds 10% of system memory.
+WARNING:tensorflow:From C:\Users\caleb.tsenytham\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\ops\math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-02-26 14:59:56.606769: W tensorflow/core/framework/allocator.cc:124] Allocation of 154140672 exceeds 10% of system memory.
+  1/114 [..............................] - ETA: 4:44 - loss: 1.6566 - acc: 0.31252019-02-26 14:59:58.250937: W tensorflow/core/framework/allocator.cc:124] Allocation of 154140672 exceeds 10% of system memory.
+  2/114 [..............................] - ETA: 4:00 - loss: 1.5634 - acc: 0.32812019-02-26 14:59:59.944226: W tensorflow/core/framework/allocator.cc:124] Allocation of 154140672 exceeds 10% of system memory.
+ 62/114 [===============>..............] - ETA: 1:29 - loss: 0.8032 - acc: 0.7122
