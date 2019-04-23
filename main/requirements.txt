@@ -1,0 +1,4 @@
+numpy==1.16.1
+opencv_python==4.0.0.21
+tensorflow==1.13.0rc2
+six==1.12.0
